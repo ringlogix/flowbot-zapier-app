@@ -1,4 +1,4 @@
-# n8n-nodes-Flowbot
+# n8n node for Flowbot
 
 Flowbot Community Nodes for n8n
 
