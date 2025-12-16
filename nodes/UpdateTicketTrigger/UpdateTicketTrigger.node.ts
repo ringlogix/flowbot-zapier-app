@@ -15,14 +15,14 @@ export class UpdateTicketTrigger implements INodeType {
     name: 'updateTicketTrigger',
     group: ['trigger'],
     version: 1,
-    description: 'Triggers when someone updates a ticket in ${CONFIG.COMPANY_NAME}.',
+    description: `Triggers when someone updates a ticket in ${CONFIG.COMPANY_NAME}.`,
     defaults: {
       name: 'Update Ticket Trigger',
     },
     codex: {
       categories: ['Productivity'],
-      subcategories: { Productivity: ['${CONFIG.COMPANY_NAME}'] },
-      alias: ['${CONFIG.COMPANY_NAME}'],
+      subcategories: { Productivity: [`${CONFIG.COMPANY_NAME}`] },
+      alias: [`${CONFIG.COMPANY_NAME}`],
     },
     inputs: [],
     outputs: ['main'],

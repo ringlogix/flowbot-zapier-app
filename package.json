@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-flowbot",
-  "version": "3.0.2",
+  "version": "3.0.10",
   "description": "Flowbot custom nodes for n8n",
   "keywords": [
     "flowbot",
@@ -50,12 +50,11 @@
     "credentials": [
       "dist/credentials/FlowbotApi.credentials.js"
     ],
+    "private": true,
+    "dependencies": {},
     "nodes": [
       "dist/nodes/CreateTicketTrigger/CreateTicketTrigger.node.js",
-      "dist/nodes/UpdateTicketTrigger/UpdateTicketTrigger.node.js",
-      "dist/nodes/StartTypingSoundAction/StartTypingSoundAction.node.js",
-      "dist/nodes/StopTypingSoundAction/StopTypingSoundAction.node.js",
-      "dist/CallTransferAction/CallTransferAction.node.js"
+      "dist/nodes/UpdateTicketTrigger/UpdateTicketTrigger.node.js"
     ]
   },
   "devDependencies": {

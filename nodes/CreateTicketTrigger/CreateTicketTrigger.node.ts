@@ -15,14 +15,14 @@ export class CreateTicketTrigger implements INodeType {
     name: 'createTicketTrigger',
     group: ['trigger'],
     version: 1,
-    description: 'Triggers from ${CONFIG.COMPANY_NAME}.',
+    description: `Triggers from ${CONFIG.COMPANY_NAME}.`,
     defaults: {
       name: `${CONFIG.COMPANY_NAME} Create Ticket`,
     },
     codex: {
       categories: ['Productivity'],
-      subcategories: { Productivity: ['${CONFIG.COMPANY_NAME}'] },
-      alias: ['${CONFIG.COMPANY_NAME}'],
+      subcategories: { Productivity: [`${CONFIG.COMPANY_NAME}`] },
+      alias: [`${CONFIG.COMPANY_NAME}`],
     },
     inputs: [],
     outputs: ['main'],

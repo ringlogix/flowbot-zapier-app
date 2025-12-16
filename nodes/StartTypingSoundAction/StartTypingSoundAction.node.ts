@@ -1,7 +1,7 @@
 import { INodeType, INodeTypeDescription, IExecuteFunctions } from 'n8n-workflow';
 import { CONFIG } from '../../shared/config';
 
-export class StartTypingSound implements INodeType {
+export class StartTypingSoundAction implements INodeType {
   description: INodeTypeDescription = {
     displayName: 'Start Typing Sound',
     name: 'startTypingSound',
@@ -44,6 +44,6 @@ export class StartTypingSound implements INodeType {
       });
       returnData.push({ json: { success: true, call_id: callId, response } });
     }
-    return this.prepareOutputData(returnData);
+    return [returnData];
   }
 }

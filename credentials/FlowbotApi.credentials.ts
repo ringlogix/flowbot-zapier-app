@@ -25,6 +25,7 @@ export class FlowbotApi implements ICredentialType {
         properties: {
             headers: {
                 'X-Api-Key': '={{$credentials.apiKey}}',
+                'Flowbot-SourceIntegrationType': CONFIG.SOURCE_TYPE,
             },
         },
     };

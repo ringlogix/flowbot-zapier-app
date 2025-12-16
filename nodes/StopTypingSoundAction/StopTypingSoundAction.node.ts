@@ -1,14 +1,14 @@
 import { INodeType, INodeTypeDescription, IExecuteFunctions } from 'n8n-workflow';
 import { CONFIG } from '../../shared/config';
 
-export class StopTypingSound implements INodeType {
+export class StopTypingSoundAction implements INodeType {
   description: INodeTypeDescription = {
-    displayName: 'Start Typing Sound',
-    name: 'startTypingSound',
+    displayName: 'Stop Typing Sound',
+    name: 'stopTypingSound',
     group: ['transform'],
     version: 1,
-    description: 'Start the typing sound for the agent during an active call.',
-    defaults: { name: 'Start Typing Sound' },
+    description: 'Stop the typing sound for the agent during an active call.',
+    defaults: { name: 'Stop Typing Sound' },
     inputs: ['main'],
     outputs: ['main'],
     credentials: [{ name: 'flowbotApi', required: true }],
